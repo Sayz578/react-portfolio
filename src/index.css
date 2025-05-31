@@ -155,6 +155,21 @@ main {
     animation: pulse 2s infinite;
 }
 
+.social{
+    display: flex;
+}
+
+.social-link {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -168,4 +183,10 @@ main {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
   }
+}
+
+@media(max-width:1170px) {
+    .container {
+        padding: 0 16px;
+    }
 }

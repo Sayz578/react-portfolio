@@ -85,7 +85,6 @@
 }
 
 .header-social {
-    display: flex;
     flex-direction: column;
     gap: 32px;
 }
@@ -165,16 +164,7 @@
     padding-top: 87px;
 }
 
-.header-social-link {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-}
+
 
 @media(max-width:768px) {
     .nav {

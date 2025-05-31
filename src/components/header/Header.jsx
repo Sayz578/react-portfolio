@@ -1,11 +1,11 @@
 import React from 'react'
 import "./header.css"
 import logo from "../../assets/logo.png"
-import { FaInstagram,FaFacebookF,FaLinkedinIn,FaDribbble } from "react-icons/fa";
 import Nav from '../nav/Nav';
 import { navItems } from '../../utils/data';
 import { MdOutlineMenu } from "react-icons/md";
 import "./header.css"
+import { socialLinks } from '../../utils/socialIcons';
 
 const Header = () => {
   return (
@@ -30,24 +30,22 @@ const Header = () => {
                     <p className="header-text">Professional Product Designer</p>
                     <a href="" className="header-link btn-orange">let’s talk</a>
                 </div>
-                <div className="header-social">
-                    <a href="" className="header-social-link">
-                        <FaInstagram/>
-                    </a>
-                    <a href="" className="header-social-link">
-                        <FaFacebookF/>
-                    </a>
-                    <a href="" className="header-social-link">
-                        <FaLinkedinIn/>
-                    </a>
-                    <a href="" className="header-social-link">
-                        <FaDribbble/>
-                    </a>
+                <div className="header-social social">
+                    {socialLinks.length ? (
+                        socialLinks.map((link,idx) => (
+                            <a href={link.url} key={idx} className="social-link">
+                                {link.icon}
+                            </a> 
+                        ))
+                    ):(
+                        <></>
+                    )}
                 </div>
             </div>
         </div>
     </header>
   )
 }
+
 
 export default Header
