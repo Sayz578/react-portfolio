@@ -1,0 +1,11 @@
+.partners {
+    background: var(--secondary-color-grey-10);
+}
+
+.partners-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 90px 0 190px 0;
+}

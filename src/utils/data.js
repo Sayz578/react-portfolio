@@ -1,3 +1,9 @@
+import behance from '../assets/behance.png';
+import slack from '../assets/slack.png';
+import dribbble from '../assets/dribbble.png';
+import twilio from '../assets/twilio.png';
+import github from '../assets/github.png';
+
 export const navItems = [
   { link: "/home", label: "home" },
   { link: "/about", label: "about" },
@@ -22,4 +28,15 @@ export const contactInfo = [
     title: 'Address',
     value: '4517 Washington Ave. Manchester, Kentucky 39495',
   },
+];
+
+
+
+
+export const partners = [
+  { src: behance, alt: 'behance' },
+  { src: slack, alt: 'slack' },
+  { src: dribbble, alt: 'dribbble' },
+  { src: twilio, alt: 'twilio' },
+  { src: github, alt: 'github' },
 ];

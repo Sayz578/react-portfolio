@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router';
-Link
 
 const Nav = ({navItems}) => {
-    console.log(navItems);
+    // console.log(navItems);
     
   return (
     <nav className="nav">
@@ -13,12 +12,9 @@ const Nav = ({navItems}) => {
                 {item.label}
               </Link>
             ))}
-            {/* <li className="item"><a href="#home" className="link active">home</a></li>
-            <li className="item"><a href="./about.html" className="link">about</a></li>
-            <li className="item"><a href="./service.html" className="link">service</a></li>
-            <li className="item"><a href="./portfolio.html" className="link">portfolio</a></li> */}
+            
         </div>
-        <a href="./contact.html" className="contact-link">contact</a>
+        <Link to="./contact.html" className="contact-link">contact</Link>
     </nav>
   )
 }
