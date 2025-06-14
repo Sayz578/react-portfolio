@@ -50,7 +50,7 @@ const Footer = () => {
                                 <input type="text" placeholder="Enter your email address"/>
                             </label>
                         </div>
-                        <label for="" className="message">
+                        <label htmlFor="" className="message">
                             Message
                             <textarea placeholder="Write your message here"></textarea>
                         </label>

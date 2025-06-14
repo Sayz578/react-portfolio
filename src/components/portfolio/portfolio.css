@@ -1,0 +1,127 @@
+.portfolio {
+    background: var(--secondary-color-grey-10);
+    padding: 72px 0;
+    position: relative;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 63px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.portfolio-item {
+    padding: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-color-grey);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.portfolio-item:hover,
+.portfolio-item.active {
+    border: 1px solid var(--primary-color-main-color);
+    border-radius: 4px;
+    color: var(--primary-color-main-color);
+}
+
+.slider-left {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color-main-color);
+    position: absolute;
+    right: 64px;
+    top: -128px;
+    z-index: 2;
+}
+
+.slider-right {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color-main-color);
+    position: absolute;
+    right: 0;
+    top: -128px;
+    z-index: 2;
+}
+
+.portfolio-btn {
+    display: flex;
+    gap: 24px;
+}
+
+.slide {
+    position: relative;
+    max-width: 364px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-list {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.59);
+    padding-top: 90px;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.slide:hover .slider-list {
+    opacity: 1;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slider-title {
+    font-family: var(--second-family);
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+.slider-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: -0.04em;
+    color: #fff;
+    text-align: center;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 40px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border-radius: 1px;
+    width: 15px;
+    height: 3px;
+    background: #e0e0e0;
+    transition: .3s linear;
+}
+
+li.slick-active button {
+    background: var(--primary-color-main-color);
+
+}
