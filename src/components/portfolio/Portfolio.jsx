@@ -29,7 +29,7 @@ return (
             <div className="portfolio-btn">
             </div>
         </div>
-        <Sliders/>
+        <Sliders className="portfolio-slider"/>
     </div>
 </section>
 )

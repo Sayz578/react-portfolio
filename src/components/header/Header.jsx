@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import "./header.css"
 import logo from "../../assets/logo.png"
 import Nav from '../nav/Nav';
@@ -8,9 +8,23 @@ import "./header.css"
 import { socialLinks } from '../../utils/socialIcons';
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false)
+     const handleScroll = () => {
+      if (window.scrollY >= 5) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
+
+    useEffect(() => {
+       window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
+    
   return (
       <header className="header" id="home">
-        <div className="header-top">
+        <div className={`header-top ${isActive ? "active" : ""}`}>
             <a href="" className="logo">
                 <img src={logo} alt="lo+go"/>
             </a>

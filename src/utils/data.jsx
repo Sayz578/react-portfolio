@@ -8,6 +8,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 import portfolio1 from "../assets/portfolio1.jpg"
 import portfolio2 from "../assets/portfolio2.jpg"
 import portfolio3 from "../assets/portfolio3.jpg"
+import testimonial from "../assets/testimonial.jpg"
 
 export const navItems = [
   { link: "/home", label: "home" },
@@ -101,5 +102,44 @@ export const portfolioSlides = [
     image: portfolio2,
     title: 'MOBILE DESIGN',
     subtitle: 'UI/UX Design',
+  },
+];
+
+
+export const testimonialSlides = [
+  {
+    id: 1,
+    image: testimonial,
+    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    name: 'Esther Howard',
+    job: 'CEO of Adebe',
+  },
+  {
+    id: 2,
+    image: testimonial,
+    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    name: 'Esther Howard',
+    job: 'CEO of Adebe',
+  },
+  {
+    id: 3,
+    image: testimonial,
+    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    name: 'Esther Howard',
+    job: 'CEO of Adebe',
+  },
+  {
+    id: 4,
+    image: testimonial,
+    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    name: 'Esther Howard',
+    job: 'CEO of Adebe',
+  },
+  {
+    id: 5,
+    image: testimonial,
+    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    name: 'Esther Howard',
+    job: 'CEO of Adebe',
   },
 ];

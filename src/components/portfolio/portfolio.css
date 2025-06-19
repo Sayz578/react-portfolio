@@ -45,6 +45,12 @@
     right: 64px;
     top: -128px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .slider-right {
@@ -55,6 +61,12 @@
     right: 0;
     top: -128px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .portfolio-btn {
@@ -106,7 +118,7 @@
 }
 
 .slick-dots {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     gap: 4px;
     margin-top: 40px;

@@ -1,9 +1,23 @@
 import React from 'react'
 import { portfolioSlides } from '../../utils/data'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import { NextArrow, PrevArrow } from './CustomArrow';
+// import "slick-carousel/slick/slick-theme.css";
 
 const Sliders = () => {
+  const settings = {
+     infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots:true,
+        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow/>
+  };
+
   return (
-    <div className="portfolio-slider">
+    <Slider className="portfolio-slider" {...settings}>
       {portfolioSlides.length && (
         portfolioSlides.map((item, idx) => (
         <div className="slider-block" key={idx}>
@@ -19,7 +33,7 @@ const Sliders = () => {
         ))
       )}
       
-    </div>
+    </Slider>
   )
 }
 
