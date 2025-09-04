@@ -35,6 +35,7 @@ const Header = () => {
             </div>
         </div>
         <div className="header-bottom">
+{/* 
             <div className="container">
                 <div className="header-content">
                     <span className="header-sub">Hello,
@@ -56,6 +57,7 @@ const Header = () => {
                     )}
                 </div>
             </div>
+             */}
         </div>
     </header>
   )
