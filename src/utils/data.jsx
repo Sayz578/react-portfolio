@@ -11,7 +11,7 @@ import portfolio3 from "../assets/portfolio3.jpg"
 import testimonial from "../assets/testimonial.jpg"
 
 export const navItems = [
-  { link: "/home", label: "home" },
+  { link: "/", label: "home" },
   { link: "/about", label: "about" },
   { link: "/service", label: "service" },
   { link: "/portfolio", label: "portfolio" },

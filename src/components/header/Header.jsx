@@ -6,8 +6,20 @@ import { navItems } from '../../utils/data';
 import { MdOutlineMenu } from "react-icons/md";
 import "./header.css"
 import { socialLinks } from '../../utils/socialIcons';
+import { useLocation } from 'react-router';
+
+
+const headerClasses = {
+  "/": "header",
+  "/about": "header__about",
+  "/service": "header__service",
+  "/portfolio": "header__portfolio",
+};
 
 const Header = () => {
+    const location = useLocation(); 
+    const headerClass = headerClasses[location.pathname] || "header";
+
     const [isActive, setIsActive] = useState(false)
      const handleScroll = () => {
       if (window.scrollY >= 5) {
@@ -23,7 +35,7 @@ const Header = () => {
     }, [])
     
   return (
-      <header className="header" id="home">
+      <header className={headerClass} id="home">
         <div className={`header-top ${isActive ? "active" : ""}`}>
             <a href="" className="logo">
                 <img src={logo} alt="lo+go"/>
