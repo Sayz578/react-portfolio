@@ -134,6 +134,16 @@
     padding-top: 87px;
 }
 
+.header__service {
+    background: url(../../assets/service-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header__portfolio {
+    background: url(../../assets/portfolio-bg.jpg) no-repeat center / cover;
+    padding-top: 87px;
+}
+
 .header-content__about .header-title {
     text-align: center;
     letter-spacing: 0.01em;

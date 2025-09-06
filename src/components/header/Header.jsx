@@ -20,7 +20,8 @@ const headerClasses = {
 const Header = () => {
     const location = useLocation();
     const headerClass = headerClasses[location.pathname] || "header";
-
+    console.log(location.pathname.slice(1));
+    
     const [isActive, setIsActive] = useState(false)
     const handleScroll = () => {
         if (window.scrollY >= 5) {
@@ -47,8 +48,9 @@ const Header = () => {
                     <MdOutlineMenu />
                 </div>
             </div>
-            <div className="header-bottom">
-                {location.pathname === "/" ? (
+            <>
+            {location.pathname === "/" ? (
+                <div className="header-bottom">
                     <div className="container">
                         <div className="header-content">
                             <span className="header-sub">Hello,
@@ -70,13 +72,18 @@ const Header = () => {
                             )}
                         </div>
                     </div>
-                ) : (
-                    <HeaderBottomPage/>
+                </div>
+                 ) : (
+                    <HeaderBottomPage title={location.pathname.slice(1)} subtitle={location.pathname.slice(1)}/>
                 )}
+            </>
+            
+                
+                    
+               
 
 
 
-            </div>
         </header>
     )
 }

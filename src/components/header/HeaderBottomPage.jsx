@@ -8,7 +8,7 @@ const HeaderBottomPage = ({title, subtitle}) => {
 
                     <h1 className="header-title">{title}</h1>
                     <span className="header-sub__about">home/
-                        <span>about</span>
+                        <span>{subtitle}</span>
                     </span>
                 </div>
 
