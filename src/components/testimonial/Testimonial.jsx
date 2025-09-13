@@ -2,11 +2,11 @@ import React from 'react'
 import "./testimonial.css"
 import Sliders from './Sliders'
 
-const Testimonial = () => {
+const Testimonial = ({ number, text, extraClass, nextClass }) => {
   return (
     <section className="testimonial">
             <div className="container">
-                <Sliders/>
+                <Sliders number={number} text={text} extraClass={extraClass} nextClass={nextClass}/>
             </div>
         </section>
   )

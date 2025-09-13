@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Service.css"
 import { services } from '../../utils/data'
+import SectionTitle from '../SectionTitle'
 
-const Service = () => {
+const Service = ({ number, text, extraClass }) => {
   return (
     <section className="service" id="service">
             <div className="container">
-                <h2 className="inner-title service-title"><span className="text-orange data-number">02</span> my service</h2>
+                <SectionTitle number = {number} text={text} extraClass = {extraClass}/>
                 <div className="service-wrapper">
                     {services.length ? (
                         services.map((item, idx) => (

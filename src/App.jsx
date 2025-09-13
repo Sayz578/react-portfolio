@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Servise from "./pages/Servise"
 import NotFound from "./pages/NotFound"
+import Portfolio from "./pages/Portfolio"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route index element= {<Home/>}/>
           <Route path="about" element= {<About/>}/>
           <Route path="service" element= {<Servise/>}/>
+          <Route path="portfolio" element= {<Portfolio/>}/>
         </Route>
         <Route path="*" element={<NotFound/>} />
       </Routes>

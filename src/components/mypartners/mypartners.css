@@ -1,0 +1,20 @@
+.mypartners {
+    background: var(--secondary-color-grey-10);
+    padding: 60px 0;
+}
+
+.mypartners-title {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.mypartners-wrapper {
+    display: flex;
+    column-gap: 80px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 974px;
+    width: 100%;
+    margin: 0 auto 80px;
+}

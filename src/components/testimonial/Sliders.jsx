@@ -3,8 +3,9 @@ import { testimonialSlides } from '../../utils/data'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { NextArrow, PrevArrow } from './CustomArrow';
+import SectionTitle from '../SectionTitle';
 
-const Sliders = () => {
+const Sliders = ({ number, text, extraClass, nextClass }) => {
   const settings = {
      infinite: true,
         slidesToShow: 1,
@@ -22,15 +23,13 @@ const Sliders = () => {
         <div>
             <div className="slider" key={idx}>
                 <div className="testimonial-slide">
-                    <h2 className="inner-title service-title media-title">
-                      <span className="text-orange data-number">04</span> testimonial
-                    </h2>
+                    <SectionTitle number = {number} text={text} extraClass = {extraClass} nextClass ={nextClass}/>
                     <figure><img src={item.image} alt={item.name}/></figure>
 
                     <div className="testimonial-block">
                         <div className="testimonial-top">
-                            <h2 className="inner-title service-title title-desctop"><span
-                                    className="text-orange data-number">04</span> testimonial</h2>
+                            
+                                    <SectionTitle number = {number} text={text} extraClass = {extraClass} className = "title-desctop"/>
                             <ul className="slide-number">
                                 <li className="first-number">{String(idx + 1).padStart(2, '0')}</li>
                                 <li className="last-number">/ {String(testimonialSlides.length).padStart(2, '0')}</li>

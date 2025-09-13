@@ -12,9 +12,9 @@ const Home = () => {
       <About/>
       <Partners/>
       <Work/>
-      <Service/>
+      <Service number = "02" text="my service" extraClass = "service-title"/>
       <Portfolio/>
-      <Testimonial/>
+      <Testimonial number = "04" text="testimonial" extraClass = "service-title" nextClass ="media-title"/>
     </div>
   )
 }

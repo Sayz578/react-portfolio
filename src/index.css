@@ -54,6 +54,10 @@ body {
     font-family: var(--font-family);
     color: var(--primary-color-black);
     font-weight: 400;
+    height: 100vh;
+}
+
+#root {
     display: flex;
     flex-direction: column;
     height: 100vh;

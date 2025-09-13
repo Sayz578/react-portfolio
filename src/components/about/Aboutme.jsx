@@ -1,14 +1,16 @@
 import React from 'react'
 import "./about.css"
+import { aboutme } from '../../assets/images'
+import SectionTitle from '../SectionTitle'
 const Aboutme = () => {
   return (
      <section className="aboutme" id="about">
             <div className="container container-aboutme">
                 <div className="about-block">
-                    <img src="./images/man-about.png" alt="about-img"/>
+                    <img src={aboutme} alt="about-img"/>
                 </div>
                 <div className="about-content">
-                    <h2 className="inner-title"><span className="text-orange data-number">01</span> about me</h2>
+                    <SectionTitle number="01" text="about me" />
                     <h3 className="aboutme-title">
                         I'm Professional Designer and Front-End Web Developer That Solve Your Problems
                     </h3>

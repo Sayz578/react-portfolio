@@ -3,15 +3,25 @@ import './footer.css'
 import { FaInstagram } from "react-icons/fa";
 import { socialLinks } from '../../utils/socialIcons';
 import { contactInfo } from '../../utils/data';
+import { useLocation } from 'react-router';
 
 const Footer = () => {
+    const location = useLocation();
+    console.log( location.pathname);
+    
     const yaer = new Date().getFullYear()
   return (
     <footer className="footer">
         <div className="container">
-            <div className="footer-top">
+            {(location.pathname === "/" || location.pathname === "/portfolio") &&  (<div className="footer-top">
                 <div className="footer-contact">
-                    <h2 className="inner-title footer-title"><span className="text-orange data-number">05</span> contact</h2>
+                    {location.pathname === "/" ? (
+                        <h2 className="inner-title footer-title"><span className="text-orange data-number">05</span> contact</h2>
+                    ):(
+                        <h2 className="inner-title footer-title"><span className="text-orange data-number">04</span> contact</h2>
+                    )}
+                    
+
                     <ul className="contact-list">
                         {contactInfo.length ? (
                             contactInfo.map((contact, idx) => (
@@ -57,7 +67,7 @@ const Footer = () => {
                         <button className="form-btn btn-orange">send message</button>
                     </form>
                 </div>
-            </div>
+            </div>)}
 
         </div>
         <div className="footer-bottom">Copyright  <span className="yaer">{yaer}</span> All Right Reserved</div>

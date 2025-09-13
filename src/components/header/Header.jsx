@@ -20,7 +20,7 @@ const headerClasses = {
 const Header = () => {
     const location = useLocation();
     const headerClass = headerClasses[location.pathname] || "header";
-    console.log(location.pathname.slice(1));
+    // console.log(location.pathname.slice(1));
     
     const [isActive, setIsActive] = useState(false)
     const handleScroll = () => {
@@ -42,7 +42,7 @@ const Header = () => {
                 <a href="" className="logo">
                     <img src={logo} alt="lo+go" />
                 </a>
-                <Nav navItems={navItems} />
+                <Nav navItems={navItems} params ={location.pathname} />
 
                 <div className="burger">
                     <MdOutlineMenu />

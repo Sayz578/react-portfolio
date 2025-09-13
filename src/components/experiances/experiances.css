@@ -1,0 +1,62 @@
+.experiances {
+    padding: 117px 0 120px 0;
+}
+
+.experiances-title {
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.experiances-wrapper {
+    display: flex;
+    gap: 72px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experiance-block {
+    width: 214px;
+}
+
+.item {
+    margin: 24px 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item .text-orange {
+    font-size: 40px;
+}
+
+.experiance-job {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: -0.04em;
+    color: var(--primary-color-black);
+}
+
+.experiance-year {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
+    color: var(--primary-color-main-color);
+}
+
+.block-yahoo {
+    transform: translateY(40px);
+}
+
+
+.block-zen {
+    transform: translateY(75px);
+}
+
+
+.block-web {
+    transform: translateY(120px);
+    margin-bottom: 120px;
+}

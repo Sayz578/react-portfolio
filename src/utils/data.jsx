@@ -1,14 +1,10 @@
-import behance from '../assets/behance.png';
-import slack from '../assets/slack.png';
-import dribbble from '../assets/dribbble.png';
-import twilio from '../assets/twilio.png';
-import github from '../assets/github.png';
 import { FaPenToSquare, FaChartLine, FaChartSimple } from "react-icons/fa6";
 import { AiOutlineProduct } from "react-icons/ai";
 import portfolio1 from "../assets/portfolio1.jpg"
 import portfolio2 from "../assets/portfolio2.jpg"
 import portfolio3 from "../assets/portfolio3.jpg"
 import testimonial from "../assets/testimonial.jpg"
+import { chargebee, instagram, linkedin, mapbox, udemy, webflow, yahoo, zendesk,behance,slack,dribbble,twilio,github } from '../assets/images';
 
 export const navItems = [
   { link: "/", label: "home" },
@@ -141,5 +137,106 @@ export const testimonialSlides = [
     text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
     name: 'Esther Howard',
     job: 'CEO of Adebe',
+  },
+];
+
+
+export const skills = [
+  {
+    name: "UI/UX Design",
+    levelClass: "ui-level", // класс для стилизации уровня
+    percent: "90%",
+  },
+  {
+    name: "Front End Developer",
+    levelClass: "fr-level",
+    percent: "85%",
+  },
+  {
+    name: "Graphic Design",
+    levelClass: "gr-level",
+    percent: "70%",
+  },
+  {
+    name: "Product Design",
+    levelClass: "pr-level",
+    percent: "65%",
+  },
+];
+
+export const experiences = [
+  {
+    id: 'linkedin',                // уникальный id — нужен для key в map
+    logo: linkedin,                // импортированная картинка (string -> путь после сборки)
+    company: 'LinkedIn',           // название компании (для alt и/или текста)
+    job: 'Lead Web Developer',     // должность
+    period: '2016-2020',           // годы
+    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco',
+    number: '01',                  // номер — отображается «01», «02»...
+    extraClass: ''                 // дополнительный класс (например 'block-yahoo')
+  },
+  {
+    id: 'yahoo',
+    logo: yahoo,
+    company: 'Yahoo',
+    job: 'Lead Web Developer',
+    period: '2016-2020',
+    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco',
+    number: '02',
+    extraClass: 'block-yahoo'
+  },
+  {
+    id: 'zendesk',
+    logo: zendesk,
+    company: 'Zendesk',
+    job: 'Lead Web Developer',
+    period: '2016-2020',
+    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco',
+    number: '03',
+    extraClass: 'block-zen'
+  },
+  {
+    id: 'webflow',
+    logo: webflow,
+    company: 'Webflow',
+    job: 'Lead Web Developer',
+    period: '2016-2020',
+    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco',
+    number: '04',
+    extraClass: 'block-web'
+  },
+];
+
+
+export const partnersImg = [
+  { id: 1, name: "behance", image: behance },
+  { id: 2, name: "slack", image: slack },
+  { id: 3, name: "dribbble", image: dribbble },
+  { id: 4, name: "twilio", image: twilio },
+  { id: 5, name: "github", image: github },
+  { id: 6, name: "chargebee", image: chargebee },
+  { id: 7, name: "udemy", image: udemy },
+  { id: 8, name: "instagram", image: instagram },
+  { id: 9, name: "mapbox", image: mapbox },
+];
+
+export const faqData = [
+  {
+    id: 1,
+    question: "Where Can I Find More Information?",
+    answer:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  },
+  {
+    id: 2,
+    question: "What Kinds of Payment Do You Accept?",
+    answer:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  },
+  {
+    id: 3,
+    question: "What Are Your Terms and Conditions?",
+    answer:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
 ];
