@@ -8,7 +8,7 @@ import "./header.css"
 import { socialLinks } from '../../utils/socialIcons';
 import { useLocation } from 'react-router';
 import HeaderBottomPage from './HeaderBottomPage';
-
+import { RiCloseLargeFill } from "react-icons/ri";
 
 const headerClasses = {
     "/": "header",
@@ -21,7 +21,8 @@ const Header = () => {
     const location = useLocation();
     const headerClass = headerClasses[location.pathname] || "header";
     // console.log(location.pathname.slice(1));
-    
+    const [open, setOpen] = useState(false)
+
     const [isActive, setIsActive] = useState(false)
     const handleScroll = () => {
         if (window.scrollY >= 5) {
@@ -30,11 +31,20 @@ const Header = () => {
             setIsActive(false);
         }
     };
+    const handleClick = () => setOpen(!open)
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
+
+    useEffect(() => {
+      document.body.style.overflow = open ? "hidden" : ""
+    console.log(open);
+    
+      return () => {document.body.style.overflow = "";}
+    }, [open])
+    
 
     return (
         <header className={headerClass} id="home">
@@ -42,10 +52,10 @@ const Header = () => {
                 <a href="" className="logo">
                     <img src={logo} alt="lo+go" />
                 </a>
-                <Nav navItems={navItems} params ={location.pathname} />
+                <Nav open={open} setOpen={setOpen} navItems={navItems} params ={location.pathname} />
 
-                <div className="burger">
-                    <MdOutlineMenu />
+                <div className="burger" onClick={handleClick}>
+                    {open ? <RiCloseLargeFill/>:<MdOutlineMenu />}
                 </div>
             </div>
             <>

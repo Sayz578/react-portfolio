@@ -59,3 +59,16 @@
 .service-card:hover svg {
     fill: #fff;
 }
+
+@media(max-width:980px) {
+    .service-card {
+        max-width: 311px;
+    }
+    .title-desctop{
+        display: none;
+    }
+
+    .media-title{
+        display: block;
+    }
+}

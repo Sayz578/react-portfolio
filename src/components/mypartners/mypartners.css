@@ -18,3 +18,12 @@
     width: 100%;
     margin: 0 auto 80px;
 }
+
+@media(max-width:980px){
+    .block-yahoo,
+    .block-zen,
+    .block-web {
+        transform: translateY(0px);
+        margin-bottom: 0;
+    }
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router';
 
-const Nav = ({navItems, params}) => {
+const Nav = ({navItems, params,open, setOpen}) => {
     // console.log(navItems);
     
   return (
-    <nav className="nav">
+    <nav className={`nav ${open ? "active":""}`}>
         <div className="menu">
             {navItems.map((item, index) => (
               <Link to={item.link} className={`${params === item.link ? "active": ""} link`} key={index}>

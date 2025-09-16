@@ -47,3 +47,10 @@
     background-repeat: no-repeat;
     background-position: left center;
 }
+
+@media (max-width: 390px) {
+    .work-wrapper h2 {
+        font-size: 32px;
+        width: 185px;
+    }
+}
