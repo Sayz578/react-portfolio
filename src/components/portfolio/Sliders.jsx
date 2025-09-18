@@ -14,15 +14,6 @@ const Sliders = () => {
     dots: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 451,
-        settings: {
-          prevArrow: null,
-          nextArrow: null,
-        }
-      }
-    ]
   };
 
   return (
