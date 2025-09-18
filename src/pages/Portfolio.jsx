@@ -7,7 +7,7 @@ import Faq from '../components/faq/Faq'
 const pagePortfolio = () => {
   return (
     <>
-    <Portfolio/>
+    <Portfolio number="01" text="portfolio" extraClass="service-title"/>
     <MyPartners number="02" text="my partners" extraClass="mypartners-title" />
     <Faq number="03" text="HAVE ANY QUESTIONS?" extraClass="faq-title"/>
     </>

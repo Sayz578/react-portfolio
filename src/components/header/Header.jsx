@@ -40,7 +40,7 @@ const Header = () => {
 
     useEffect(() => {
       document.body.style.overflow = open ? "hidden" : ""
-    console.log(open);
+    // console.log(open);
     
       return () => {document.body.style.overflow = "";}
     }, [open])

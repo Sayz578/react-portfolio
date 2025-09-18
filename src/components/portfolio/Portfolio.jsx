@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import "./portfolio.css"
 import { portfolioFilters } from '../../utils/data';
 import Sliders from './Sliders';
+import SectionTitle from '../SectionTitle';
 
-const Portfolio = () => {
+const Portfolio = ({ number, text, extraClass, nextClass }) => {
 const [activeFilter, setActiveFilter] = useState('all');
 const handleFilterClick = (id) => {
 setActiveFilter(id);
@@ -13,7 +14,7 @@ return (
 <section className="portfolio" id="portfolio">
     <div className="container">
         <div className="portfolio-wrapper">
-            <h2 className="inner-title service-title"><span className="text-orange data-number">03</span> portfolio</h2>
+            <SectionTitle number = {number} text={text} extraClass = {extraClass}/>
             <ul className="portfolio-list">
                 {portfolioFilters.length ? (
                     portfolioFilters.map((item, idx) => (
