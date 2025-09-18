@@ -139,8 +139,7 @@ li.slick-active button {
 }
 
 @media(max-width:450px){
-    .slider-right,
-    .slider-left{
+    .slick-arrow{
         display: none;
     }
 }
