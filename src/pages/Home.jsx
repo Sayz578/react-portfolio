@@ -13,7 +13,7 @@ const Home = () => {
       <Partners/>
       <Work/>
       <Service number = "02" text="my service" extraClass = "service-title"/>
-      <Portfolio/>
+      <Portfolio number = "03" text="portfolio" extraClass = ""/>
       <Testimonial number = "04" text="testimonial" extraClass = "service-title" nextClass ="media-title"/>
     </div>
   )
